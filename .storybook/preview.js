@@ -1,3 +1,9 @@
+import React from 'core-js/library/fn/reflect/es7/metadata'
+import { addDecorator } from '@storybook/react'
+import Center from '../src/Components/Center'
+
+addDecorator(story => <Center>{story()}</Center>)
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   options: {
