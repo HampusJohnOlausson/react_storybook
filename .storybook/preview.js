@@ -1,8 +1,9 @@
 import React from 'core-js/library/fn/reflect/es7/metadata'
 import { addDecorator } from '@storybook/react'
 import Center from '../src/Components/Center'
+import { ThemeProvider, theme, CSSReset} from '@chakra-ui/core'
 
-addDecorator(story => <Center>{story()}</Center>)
+addDecorator(story => <ThemeProvider theme={theme}><CSSReset/>{story()}</ThemeProvider>)
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
