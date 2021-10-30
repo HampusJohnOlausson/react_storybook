@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '@chakra-ui/core'
+import { action, actions } from '@storybook/addon-actions'
 
 export default {
   title: 'Chakra/Button',
@@ -19,4 +20,4 @@ Success.args = {
     children: 'Success'
 }
 
-export const Danger = () => <Button variantColor='red'>Danger</Button>
+export const Danger = () => <Button onClick={action('Click handler')} variantColor='red'>Danger</Button>
