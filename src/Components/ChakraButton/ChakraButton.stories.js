@@ -20,4 +20,4 @@ Success.args = {
     children: 'Success'
 }
 
-export const Danger = () => <Button onClick={action('Click handler')} variantColor='red'>Danger</Button>
+export const Danger = () => <Button {...actions('onClick', 'onMouseOver')} variantColor='red'>Danger</Button>
